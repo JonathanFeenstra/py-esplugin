@@ -56,7 +56,8 @@ impl PyPlugin {
 }
 
 #[pymodule]
-fn esplugin(_py: Python, m: &PyModule) -> PyResult<()> {
+#[pyo3(name = "esplugin")]
+fn py_esplugin(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_class::<PyPlugin>()?;
     Ok(())
 }
