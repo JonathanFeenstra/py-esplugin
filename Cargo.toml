@@ -1,6 +1,6 @@
 [package]
 name = "py-esplugin"
-version = "0.2.0"
+version = "0.3.1"
 edition = "2021"
 authors = ["Jonathan Feenstra"]
 description = "FFI providing PyO3 bindings for parts of esplugin for Python"
@@ -15,8 +15,8 @@ name = "esplugin"
 crate-type = ["cdylib"]
 
 [dependencies]
-esplugin = "4.1.0"
+esplugin = "4.1.1"
 
 [dependencies.pyo3]
-version = "0.19.2"
+version = "0.20.0"
 features = ["extension-module"]
